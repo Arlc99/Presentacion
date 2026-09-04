@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>jualu — Estratega de Marketing Digital</title>
+<title>jualu— Estratega de Marketing Digital</title>
 <meta name="description" content="Estrategia de marketing digital orientada a resultados: campañas, posicionamiento de marca y crecimiento medible.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +12,16 @@
 </head>
 <body>
 
-<div class="bg-field" aria-hidden="true"></div>
-
+<!-- ============================================
+     HEADER — nav flotante estilo píldora
+     ============================================ -->
 <header class="site-header" id="top">
   <div class="wrap header-inner">
     <a href="#top" class="brand">Sebastian Rodriguez</a>
 
     <nav class="nav" id="nav">
       <a href="#sobre-mi">Sobre mí</a>
+      <a href="#servicios">Servicios</a>
       <a href="#proyectos">Proyectos</a>
       <a href="#experiencia">Experiencia</a>
       <a href="#marcas">Marcas</a>
@@ -36,24 +38,49 @@
 
 <main>
 
-  <!-- HERO -->
+  <!-- ============================================
+       HERO — panel oscuro tipo "foto grande"
+       (Reemplaza el fondo de .hero-media en styles.css
+       por una foto real del profesional cuando la tengas)
+       ============================================ -->
   <section class="hero">
-    <div class="wrap hero-inner">
-      <div class="hero-copy">
-        <p class="kicker">Estratega de marketing digital</p>
-        <h1>Convierto atención en clientes, no solo likes en pantalla.</h1>
-        <p class="hero-lead">
-          Diseño y ejecuto estrategias de adquisición, contenido y performance
-          para marcas que necesitan crecer con números que se puedan defender
-          en una junta directiva.
-        </p>
-        <div class="hero-actions">
-          <a href="#contacto" class="btn btn-primary">Agendar una llamada</a>
-          <a href="#proyectos" class="btn btn-ghost">Ver proyectos</a>
-        </div>
-      </div>
+    <div class="hero-media" aria-hidden="true">
+      <!-- Foto de placeholder (Picsum, libre de derechos). Reemplaza el src
+           por una foto real del profesional u oficina cuando la tengas. -->
+      <img class="hero-photo" src="https://picsum.photos/seed/mktg-hero-2026/1600/900" alt="">
+      <div class="hero-media-glow"></div>
+      <svg class="hero-skyline" viewBox="0 0 1200 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="40" y="120" width="70" height="140" fill="rgba(10,23,48,0.55)"/>
+        <rect x="130" y="70" width="90" height="190" fill="rgba(10,23,48,0.65)"/>
+        <rect x="240" y="150" width="60" height="110" fill="rgba(10,23,48,0.5)"/>
+        <rect x="320" y="40" width="100" height="220" fill="rgba(10,23,48,0.7)"/>
+        <rect x="440" y="100" width="75" height="160" fill="rgba(10,23,48,0.55)"/>
+        <rect x="540" y="20" width="110" height="240" fill="rgba(10,23,48,0.75)"/>
+        <rect x="670" y="90" width="65" height="170" fill="rgba(10,23,48,0.5)"/>
+        <rect x="760" y="130" width="80" height="130" fill="rgba(10,23,48,0.6)"/>
+        <rect x="860" y="60" width="95" height="200" fill="rgba(10,23,48,0.68)"/>
+        <rect x="980" y="140" width="70" height="120" fill="rgba(10,23,48,0.5)"/>
+        <rect x="1070" y="95" width="90" height="165" fill="rgba(10,23,48,0.6)"/>
+      </svg>
+    </div>
 
-      <div class="hero-panel" aria-label="Resultados destacados">
+    <div class="wrap hero-content">
+      <p class="kicker">Estratega de marketing digital</p>
+      <h1>Convierto atención en clientes,<br>no solo likes en pantalla.</h1>
+      <p class="hero-lead">
+        Diseño y ejecuto estrategias de adquisición, contenido y performance
+        para marcas que necesitan crecer con números que se puedan defender
+        en una junta directiva.
+      </p>
+      <div class="hero-actions">
+        <a href="#contacto" class="btn btn-primary">Agendar una llamada</a>
+        <a href="#proyectos" class="btn btn-outline-light">Ver proyectos</a>
+      </div>
+    </div>
+
+    <!-- Barra flotante de estadísticas, superpuesta al borde del hero -->
+    <div class="wrap">
+      <div class="stat-bar" aria-label="Resultados destacados">
         <div class="stat">
           <span class="stat-num" data-count="120">0</span><span class="stat-suffix">+</span>
           <span class="stat-label">campañas ejecutadas</span>
@@ -74,25 +101,142 @@
     </div>
   </section>
 
-  <!-- SOBRE MÍ -->
+  <!-- ============================================
+       SERVICIOS — tarjetas con ícono, sección clara
+       ============================================ -->
+  <section class="services" id="servicios">
+    <div class="wrap">
+      <h2>Cómo trabajo</h2>
+      <p class="section-lead">Un proceso claro, de diagnóstico a resultados medibles.</p>
+
+      <div class="service-grid">
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M11 3a8 8 0 105.29 14.29l4.21 4.2 1.4-1.4-4.2-4.21A8 8 0 0011 3zm0 2a6 6 0 110 12 6 6 0 010-12z" fill="currentColor"/></svg>
+          </span>
+          <h3>Diagnóstico</h3>
+          <p>Reviso tu presencia digital actual y detecto dónde está la fuga de oportunidades.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M4 20h16M6 20V10m6 10V4m6 16v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Estrategia</h3>
+          <p>Defino canales, mensajes y presupuesto según el objetivo real del negocio.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M13 3L4 14h6l-1 7 9-11h-6l1-7z" fill="currentColor"/></svg>
+          </span>
+          <h3>Ejecución</h3>
+          <p>Pauta, contenido y automatización funcionando de forma coordinada, no aislada.</p>
+        </article>
+
+        <article class="service-card">
+          <span class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+          <h3>Medición</h3>
+          <p>Reportes claros cada mes: qué funcionó, qué no, y el siguiente paso.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       BANNER DIVIDIDO OSCURO — cita + CTA
+       ============================================ -->
+  <section class="split-banner">
+    <div class="wrap split-inner">
+      <div class="split-copy">
+        <h2>Los resultados hablan solos, no las impresiones.</h2>
+        <p>
+          Trabajo con un solo indicador de éxito: el crecimiento real del
+          negocio. Si una campaña no mueve esa aguja, la cambio, sin apego
+          a la vanidad de las métricas.
+        </p>
+        <a href="#contacto" class="btn btn-primary">Hablemos de tu marca</a>
+      </div>
+      <div class="split-visual">
+        <!-- Placeholder (Picsum). Reemplaza el src por una foto real de campaña/equipo. -->
+        <img class="split-photo" src="https://picsum.photos/seed/mktg-team-2026/700/500" alt="Equipo trabajando en una estrategia de marketing">
+        <div class="visual-card">
+          <span class="visual-num">+180%</span>
+          <span class="visual-label">tráfico orgánico</span>
+        </div>
+        <div class="visual-card visual-card--offset">
+          <span class="visual-num">2.4x</span>
+          <span class="visual-label">retorno de pauta</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       PROYECTOS — casos de éxito, tipo listado
+       ============================================ -->
+  <section class="projects" id="proyectos">
+    <div class="wrap">
+      <h2>Proyectos destacados</h2>
+      <p class="section-lead">Una muestra de resultados en distintos sectores.</p>
+
+      <div class="case-list">
+        <article class="case">
+          <span class="case-avatar">RM</span>
+          <div class="case-body">
+            <h3>Retail de moda</h3>
+            <p>Reestructuración de arquitectura de contenido y SEO técnico que duplicó el tráfico orgánico en seis meses.</p>
+          </div>
+          <div class="case-metric">
+            <span class="case-num">+180%</span>
+            <span class="case-label">tráfico orgánico</span>
+          </div>
+        </article>
+
+        <article class="case">
+          <span class="case-avatar">FB</span>
+          <div class="case-body">
+            <h3>Fintech B2C</h3>
+            <p>Embudo de pauta en Meta y Google Ads con segmentación por intención de compra, bajando el CPA un 35%.</p>
+          </div>
+          <div class="case-metric">
+            <span class="case-num">2.4x</span>
+            <span class="case-label">retorno de pauta</span>
+          </div>
+        </article>
+
+        <article class="case">
+          <span class="case-avatar">ED</span>
+          <div class="case-body">
+            <h3>Educación online</h3>
+            <p>Automatización de nutrición de leads que subió la conversión a matrícula un 22% en un año.</p>
+          </div>
+          <div class="case-metric">
+            <span class="case-num">+12k</span>
+            <span class="case-label">leads calificados</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SOBRE MÍ
+       ============================================ -->
   <section class="about" id="sobre-mi">
     <div class="wrap about-inner">
-      <div class="about-photo" role="img" aria-label="Foto de Mateo Londoño">
-        <span>MT</span>
-      </div>
+      <!-- Placeholder (Picsum). Reemplaza el src por la foto real del profesional. -->
+      <img class="about-photo" src="https://picsum.photos/seed/mktg-portrait-2026/500/500" alt="Foto de Mateo Londoño">
+      
       <div class="about-copy">
         <h2>Sobre mí</h2>
         <p>
           Llevo ocho años ayudando a marcas —desde startups hasta empresas
           consolidadas— a construir presencia digital que sí se traduce en
           ventas. Trabajo la estrategia completa: adquisición pagada, SEO,
-          contenido, email y automatización, siempre con foco en un solo
-          indicador: el crecimiento real del negocio.
-        </p>
-        <p>
-          Mi enfoque no es publicar por publicar. Cada pieza de contenido y
-          cada peso invertido en pauta responde a un objetivo de negocio
-          concreto, medido y reportado con claridad.
+          contenido, email y automatización.
         </p>
         <ul class="skills">
           <li>Paid Media</li>
@@ -106,61 +250,9 @@
     </div>
   </section>
 
-  <!-- PROYECTOS -->
-  <section class="projects" id="proyectos">
-    <div class="wrap">
-      <h2>Proyectos recientes</h2>
-      <p class="section-lead">Una muestra de resultados en distintos sectores.</p>
-
-      <div class="project-list">
-        <article class="project">
-          <div class="project-result">
-            <span class="result-num">+180%</span>
-            <span class="result-label">tráfico orgánico</span>
-          </div>
-          <div class="project-body">
-            <h3>Rediseño de estrategia SEO — Retail de moda</h3>
-            <p>
-              Reestructuración de arquitectura de contenido y optimización
-              técnica que llevó el tráfico orgánico a más del doble en seis
-              meses, con impacto directo en ventas online.
-            </p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-result">
-            <span class="result-num">2.4x</span>
-            <span class="result-label">retorno de pauta</span>
-          </div>
-          <div class="project-body">
-            <h3>Campaña de adquisición — Fintech B2C</h3>
-            <p>
-              Estructuración de embudo de pauta en Meta y Google Ads con
-              segmentación por intención de compra, reduciendo el costo por
-              adquisición en un 35%.
-            </p>
-          </div>
-        </article>
-
-        <article class="project">
-          <div class="project-result">
-            <span class="result-num">+12k</span>
-            <span class="result-label">leads calificados</span>
-          </div>
-          <div class="project-body">
-            <h3>Estrategia de contenido y email — Educación online</h3>
-            <p>
-              Serie de automatizaciones de nutrición de leads que aumentó la
-              tasa de conversión a matrícula en un 22% en un año.
-            </p>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- EXPERIENCIA -->
+  <!-- ============================================
+       EXPERIENCIA
+       ============================================ -->
   <section class="experience" id="experiencia">
     <div class="wrap">
       <h2>Experiencia</h2>
@@ -190,7 +282,9 @@
     </div>
   </section>
 
-  <!-- MARCAS -->
+  <!-- ============================================
+       MARCAS
+       ============================================ -->
   <section class="brands" id="marcas">
     <div class="wrap">
       <h2>Marcas con las que he trabajado</h2>
@@ -205,7 +299,9 @@
     </div>
   </section>
 
-  <!-- CONTACTO -->
+  <!-- ============================================
+       CONTACTO
+       ============================================ -->
   <section class="contact" id="contacto">
     <div class="wrap contact-inner">
       <div class="contact-copy">
@@ -258,9 +354,9 @@
 
 <footer class="site-footer">
   <div class="wrap footer-inner">
-    <span>© <span id="year"></span> Sebastia Rodriguez. Todos los derechos reservados.</span>
+    <span>© <span id="year"></span> Mateo Londoño. Todos los derechos reservados.</span>
     <div class="footer-links">
-      <a href="mailto:hola@sebastianrodriguez.com">hola@sebastianrodriguez.com</a>
+      <a href="mailto:hola@mateolondono.com">hola@mateolondono.com</a>
       <a href="#top">Volver arriba</a>
     </div>
   </div>
