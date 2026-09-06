@@ -1,367 +1,377 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>jualu— Estratega de Marketing Digital</title>
-<meta name="description" content="Estrategia de marketing digital orientada a resultados: campañas, posicionamiento de marca y crecimiento medible.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daniel Rojas · Experto en Marketing Digital</title>
+  <meta name="description" content="Daniel Rojas, experto en Marketing Digital. Estrategias, campañas y crecimiento medible para tu marca. Agenda una llamada por Google Meet.">
+
+  <!-- Tipografías: Sora para titulares, Inter para texto de cuerpo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ============================================
-     HEADER — nav flotante estilo píldora
-     ============================================ -->
-<header class="site-header" id="top">
-  <div class="wrap header-inner">
-    <a href="#top" class="brand">Sebastian Rodriguez</a>
+  <!-- =========================================================
+       NAVBAR
+  ========================================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar__inner">
+      <a href="#inicio" class="navbar__logo" aria-label="Ir al inicio">
+        <span class="navbar__logo-mark">DR</span>
+        <span class="navbar__logo-text">Daniel Rojas</span>
+      </a>
 
-    <nav class="nav" id="nav">
-      <a href="#sobre-mi">Sobre mí</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#experiencia">Experiencia</a>
-      <a href="#marcas">Marcas</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
+      <button class="navbar__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
 
-    <a href="#contacto" class="btn btn-primary btn-small">Agendar llamada</a>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav">
-      <span></span><span></span><span></span>
-    </button>
-  </div>
-</header>
-
-<main>
-
-  <!-- ============================================
-       HERO — panel oscuro tipo "foto grande"
-       (Reemplaza el fondo de .hero-media en styles.css
-       por una foto real del profesional cuando la tengas)
-       ============================================ -->
-  <section class="hero">
-    <div class="hero-media" aria-hidden="true">
-      <!-- Foto de placeholder (Picsum, libre de derechos). Reemplaza el src
-           por una foto real del profesional u oficina cuando la tengas. -->
-      <img class="hero-photo" src="https://picsum.photos/seed/mktg-hero-2026/1600/900" alt="">
-      <div class="hero-media-glow"></div>
-      <svg class="hero-skyline" viewBox="0 0 1200 260" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="40" y="120" width="70" height="140" fill="rgba(10,23,48,0.55)"/>
-        <rect x="130" y="70" width="90" height="190" fill="rgba(10,23,48,0.65)"/>
-        <rect x="240" y="150" width="60" height="110" fill="rgba(10,23,48,0.5)"/>
-        <rect x="320" y="40" width="100" height="220" fill="rgba(10,23,48,0.7)"/>
-        <rect x="440" y="100" width="75" height="160" fill="rgba(10,23,48,0.55)"/>
-        <rect x="540" y="20" width="110" height="240" fill="rgba(10,23,48,0.75)"/>
-        <rect x="670" y="90" width="65" height="170" fill="rgba(10,23,48,0.5)"/>
-        <rect x="760" y="130" width="80" height="130" fill="rgba(10,23,48,0.6)"/>
-        <rect x="860" y="60" width="95" height="200" fill="rgba(10,23,48,0.68)"/>
-        <rect x="980" y="140" width="70" height="120" fill="rgba(10,23,48,0.5)"/>
-        <rect x="1070" y="95" width="90" height="165" fill="rgba(10,23,48,0.6)"/>
-      </svg>
+      <nav class="navbar__menu" id="navMenu">
+        <a href="#inicio" class="navbar__link">Inicio</a>
+        <a href="#educacion" class="navbar__link">Educación</a>
+        <a href="#experiencia" class="navbar__link">Experiencia</a>
+        <a href="#marcas" class="navbar__link">Marcas</a>
+        <a href="#contacto" class="navbar__link">Contacto</a>
+        <a href="#agendar" class="btn btn--primary btn--small navbar__cta">Agendar llamada</a>
+      </nav>
     </div>
+  </header>
 
-    <div class="wrap hero-content">
-      <p class="kicker">Estratega de marketing digital</p>
-      <h1>Convierto atención en clientes,<br>no solo likes en pantalla.</h1>
-      <p class="hero-lead">
-        Diseño y ejecuto estrategias de adquisición, contenido y performance
-        para marcas que necesitan crecer con números que se puedan defender
-        en una junta directiva.
-      </p>
-      <div class="hero-actions">
-        <a href="#contacto" class="btn btn-primary">Agendar una llamada</a>
-        <a href="#proyectos" class="btn btn-outline-light">Ver proyectos</a>
+  <main>
+
+    <!-- =========================================================
+         HERO / PORTADA
+    ========================================================== -->
+    <section class="hero" id="inicio">
+      <div class="container hero__inner">
+
+        <div class="hero__content">
+          <p class="hero__kicker">Marketing Digital &amp; Growth</p>
+          <h1 class="hero__title">
+            Estrategias digitales que convierten visitas en clientes reales.
+          </h1>
+          <p class="hero__subtitle">
+            Diseño y ejecuto campañas de marketing digital basadas en datos: SEO, pauta,
+            contenido y automatización para marcas que quieren crecer con foco, no con ruido.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#agendar" class="btn btn--primary">
+              <svg class="btn__icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="3" y="5" width="18" height="16" rx="2" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M3 9.5H21" stroke="currentColor" stroke-width="1.6"/>
+                <path d="M8 3V6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+                <path d="M16 3V6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              Agendar llamada por Google Meet
+            </a>
+            <a href="#experiencia" class="btn btn--ghost">Ver experiencia</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <span class="hero__stat-num">+5</span>
+              <span class="hero__stat-label">Años de experiencia</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-num">+60</span>
+              <span class="hero__stat-label">Campañas gestionadas</span>
+            </div>
+            <div class="hero__stat">
+              <span class="hero__stat-num">+120%</span>
+              <span class="hero__stat-label">ROI promedio en pauta</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__figure">
+          <div class="hero__blob" aria-hidden="true"></div>
+          <img class="hero__photo" src="assets/modelo.png" alt="Daniel Rojas, experto en marketing digital" width="502" height="587">
+
+          <div class="hero__chip hero__chip--top">
+            <span class="hero__chip-dot"></span>
+            Disponible para nuevos proyectos
+          </div>
+          <div class="hero__chip hero__chip--bottom">
+            <strong>4.9/5</strong> satisfacción de clientes
+          </div>
+        </div>
+
       </div>
-    </div>
+    </section>
 
-    <!-- Barra flotante de estadísticas, superpuesta al borde del hero -->
-    <div class="wrap">
-      <div class="stat-bar" aria-label="Resultados destacados">
-        <div class="stat">
-          <span class="stat-num" data-count="120">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">campañas ejecutadas</span>
+    <!-- =========================================================
+         EDUCACIÓN UNIVERSITARIA
+    ========================================================== -->
+    <section class="section" id="educacion">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Formación académica</h2>
+          <p class="section__desc">
+            Una base universitaria sólida en marketing digital, actualizada constantemente
+            con nuevas herramientas y metodologías del sector.
+          </p>
         </div>
-        <div class="stat">
-          <span class="stat-num" data-count="3" data-decimals="1">0</span><span class="stat-suffix">x</span>
-          <span class="stat-label">ROI promedio en pauta</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num" data-count="40">0</span><span class="stat-suffix">+</span>
-          <span class="stat-label">marcas acompañadas</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num" data-count="8">0</span>
-          <span class="stat-label">años de trayectoria</span>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <!-- ============================================
-       SERVICIOS — tarjetas con ícono, sección clara
-       ============================================ -->
-  <section class="services" id="servicios">
-    <div class="wrap">
-      <h2>Cómo trabajo</h2>
-      <p class="section-lead">Un proceso claro, de diagnóstico a resultados medibles.</p>
+        <div class="edu-card">
+          <div class="edu-card__badge">
+            <svg viewBox="0 0 48 48" fill="none" aria-hidden="true">
+              <path d="M24 6L44 16L24 26L4 16L24 6Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M12 21V32C12 32 16 37 24 37C32 37 36 32 36 32V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M44 16V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
 
-      <div class="service-grid">
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M11 3a8 8 0 105.29 14.29l4.21 4.2 1.4-1.4-4.2-4.21A8 8 0 0011 3zm0 2a6 6 0 110 12 6 6 0 010-12z" fill="currentColor"/></svg>
-          </span>
-          <h3>Diagnóstico</h3>
-          <p>Reviso tu presencia digital actual y detecto dónde está la fuga de oportunidades.</p>
-        </article>
+          <div class="edu-card__body">
+            <span class="edu-card__tag">Especialización · Marketing Digital</span>
+            <h3 class="edu-card__title">Experto en Marketing Digital</h3>
+            <p class="edu-card__school">Corporación Universitaria de Asturias (UniAsturias)</p>
+            <p class="edu-card__text">
+              Formación 100% virtual enfocada en estrategia digital, analítica de datos,
+              publicidad en medios digitales, comercio electrónico y gestión de marca online,
+              aplicada a proyectos reales durante todo el programa.
+            </p>
 
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M4 20h16M6 20V10m6 10V4m6 16v-7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-          <h3>Estrategia</h3>
-          <p>Defino canales, mensajes y presupuesto según el objetivo real del negocio.</p>
-        </article>
+            <ul class="edu-card__list">
+              <li>Estrategia y analítica digital para negocios</li>
+              <li>Publicidad y pauta en medios digitales (SEM, Social Ads)</li>
+              <li>Posicionamiento SEO y marketing de contenidos</li>
+              <li>E-commerce y automatización de marketing</li>
+            </ul>
 
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><path d="M13 3L4 14h6l-1 7 9-11h-6l1-7z" fill="currentColor"/></svg>
-          </span>
-          <h3>Ejecución</h3>
-          <p>Pauta, contenido y automatización funcionando de forma coordinada, no aislada.</p>
-        </article>
-
-        <article class="service-card">
-          <span class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/><path d="M12 7v5l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </span>
-          <h3>Medición</h3>
-          <p>Reportes claros cada mes: qué funcionó, qué no, y el siguiente paso.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================
-       BANNER DIVIDIDO OSCURO — cita + CTA
-       ============================================ -->
-  <section class="split-banner">
-    <div class="wrap split-inner">
-      <div class="split-copy">
-        <h2>Los resultados hablan solos, no las impresiones.</h2>
-        <p>
-          Trabajo con un solo indicador de éxito: el crecimiento real del
-          negocio. Si una campaña no mueve esa aguja, la cambio, sin apego
-          a la vanidad de las métricas.
-        </p>
-        <a href="#contacto" class="btn btn-primary">Hablemos de tu marca</a>
-      </div>
-      <div class="split-visual">
-        <!-- Placeholder (Picsum). Reemplaza el src por una foto real de campaña/equipo. -->
-        <img class="split-photo" src="https://picsum.photos/seed/mktg-team-2026/700/500" alt="Equipo trabajando en una estrategia de marketing">
-        <div class="visual-card">
-          <span class="visual-num">+180%</span>
-          <span class="visual-label">tráfico orgánico</span>
-        </div>
-        <div class="visual-card visual-card--offset">
-          <span class="visual-num">2.4x</span>
-          <span class="visual-label">retorno de pauta</span>
+            <a href="https://uniasturias.edu.co/" target="_blank" rel="noopener" class="edu-card__link">
+              Ver el programa en UniAsturias
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H5M12 4V11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================
-       PROYECTOS — casos de éxito, tipo listado
-       ============================================ -->
-  <section class="projects" id="proyectos">
-    <div class="wrap">
-      <h2>Proyectos destacados</h2>
-      <p class="section-lead">Una muestra de resultados en distintos sectores.</p>
+    <!-- =========================================================
+         EXPERIENCIA
+    ========================================================== -->
+    <section class="section section--alt" id="experiencia">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="section__title">Experiencia profesional</h2>
+          <p class="section__desc">
+            El recorrido que me ha llevado de ejecutar campañas a diseñar estrategias
+            completas de crecimiento digital.
+          </p>
+        </div>
 
-      <div class="case-list">
-        <article class="case">
-          <span class="case-avatar">RM</span>
-          <div class="case-body">
-            <h3>Retail de moda</h3>
-            <p>Reestructuración de arquitectura de contenido y SEO técnico que duplicó el tráfico orgánico en seis meses.</p>
-          </div>
-          <div class="case-metric">
-            <span class="case-num">+180%</span>
-            <span class="case-label">tráfico orgánico</span>
-          </div>
-        </article>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2024 — Presente</span>
+              <h3 class="timeline__title">Consultor Freelance de Marketing Digital</h3>
+              <p class="timeline__text">
+                Acompaño a pymes y marcas personales en el diseño de su estrategia digital
+                completa: pauta, contenido, funnels de venta y reportes de resultados.
+              </p>
+            </div>
+          </li>
 
-        <article class="case">
-          <span class="case-avatar">FB</span>
-          <div class="case-body">
-            <h3>Fintech B2C</h3>
-            <p>Embudo de pauta en Meta y Google Ads con segmentación por intención de compra, bajando el CPA un 35%.</p>
-          </div>
-          <div class="case-metric">
-            <span class="case-num">2.4x</span>
-            <span class="case-label">retorno de pauta</span>
-          </div>
-        </article>
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2022 — 2024</span>
+              <h3 class="timeline__title">Especialista en Pauta y Performance</h3>
+              <p class="timeline__text">
+                Gestión de presupuestos de pauta en Meta Ads y Google Ads, optimización
+                de campañas y análisis de métricas de conversión para clientes retail.
+              </p>
+            </div>
+          </li>
 
-        <article class="case">
-          <span class="case-avatar">ED</span>
-          <div class="case-body">
-            <h3>Educación online</h3>
-            <p>Automatización de nutrición de leads que subió la conversión a matrícula un 22% en un año.</p>
-          </div>
-          <div class="case-metric">
-            <span class="case-num">+12k</span>
-            <span class="case-label">leads calificados</span>
-          </div>
-        </article>
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2020 — 2022</span>
+              <h3 class="timeline__title">Community Manager &amp; Contenido</h3>
+              <p class="timeline__text">
+                Planeación de contenido, calendarios editoriales y manejo de comunidad
+                para marcas en crecimiento en redes sociales.
+              </p>
+            </div>
+          </li>
+
+          <li class="timeline__item">
+            <div class="timeline__marker"></div>
+            <div class="timeline__content">
+              <span class="timeline__date">2019</span>
+              <h3 class="timeline__title">Inicios en Marketing Digital</h3>
+              <p class="timeline__text">
+                Primeros proyectos de marketing digital mientras cursaba mi formación
+                universitaria en UniAsturias.
+              </p>
+            </div>
+          </li>
+        </ol>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================
-       SOBRE MÍ
-       ============================================ -->
-  <section class="about" id="sobre-mi">
-    <div class="wrap about-inner">
-      <!-- Placeholder (Picsum). Reemplaza el src por la foto real del profesional. -->
-      <img class="about-photo" src="https://picsum.photos/seed/mktg-portrait-2026/500/500" alt="Foto de Mateo Londoño">
-      
-      <div class="about-copy">
-        <h2>Sobre mí</h2>
-        <p>
-          Llevo ocho años ayudando a marcas —desde startups hasta empresas
-          consolidadas— a construir presencia digital que sí se traduce en
-          ventas. Trabajo la estrategia completa: adquisición pagada, SEO,
-          contenido, email y automatización.
-        </p>
-        <ul class="skills">
-          <li>Paid Media</li>
-          <li>SEO técnico</li>
-          <li>Estrategia de contenido</li>
-          <li>Email marketing</li>
-          <li>Analítica y CRO</li>
-          <li>Branding digital</li>
-        </ul>
+    <!-- =========================================================
+         MARCAS
+    ========================================================== -->
+    <section class="section" id="marcas">
+      <div class="container">
+        <div class="section__head section__head--center">
+          <h2 class="section__title">Marcas con las que he trabajado</h2>
+        </div>
       </div>
-    </div>
-  </section>
 
-  <!-- ============================================
-       EXPERIENCIA
-       ============================================ -->
-  <section class="experience" id="experiencia">
-    <div class="wrap">
-      <h2>Experiencia</h2>
-      <ol class="timeline">
-        <li>
-          <span class="timeline-year">2023 — hoy</span>
-          <div>
-            <h3>Consultor independiente de marketing digital</h3>
-            <p>Acompañamiento estratégico a marcas medianas en crecimiento digital y performance.</p>
-          </div>
-        </li>
-        <li>
-          <span class="timeline-year">2020 — 2023</span>
-          <div>
-            <h3>Líder de crecimiento digital, agencia regional</h3>
-            <p>Dirección de equipo de pauta y contenido para cuentas de retail y tecnología.</p>
-          </div>
-        </li>
-        <li>
-          <span class="timeline-year">2017 — 2020</span>
-          <div>
-            <h3>Especialista en marketing de performance</h3>
-            <p>Gestión de presupuestos de pauta digital y optimización continua de campañas.</p>
-          </div>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ============================================
-       MARCAS
-       ============================================ -->
-  <section class="brands" id="marcas">
-    <div class="wrap">
-      <h2>Marcas con las que he trabajado</h2>
-      <div class="brand-row">
-        <span>NORTE&nbsp;RETAIL</span>
-        <span>Vento</span>
-        <span>Lúmina</span>
-        <span>Ábaco&nbsp;Fintech</span>
-        <span>Cursiva</span>
-        <span>Pórtico</span>
+      <div class="brands">
+        <div class="brands__track">
+          <span class="brands__logo">Nortek</span>
+          <span class="brands__logo">Vivo Retail</span>
+          <span class="brands__logo">Café Andino</span>
+          <span class="brands__logo">Urbana Studio</span>
+          <span class="brands__logo">Lumen Salud</span>
+          <span class="brands__logo">Raíz Legal</span>
+          <span class="brands__logo">Nortek</span>
+          <span class="brands__logo">Vivo Retail</span>
+          <span class="brands__logo">Café Andino</span>
+          <span class="brands__logo">Urbana Studio</span>
+          <span class="brands__logo">Lumen Salud</span>
+          <span class="brands__logo">Raíz Legal</span>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ============================================
-       CONTACTO
-       ============================================ -->
-  <section class="contact" id="contacto">
-    <div class="wrap contact-inner">
-      <div class="contact-copy">
-        <h2>Agendemos una llamada</h2>
-        <p>
-          Cuéntame en qué está tu marca hoy y hacia dónde quieres llevarla.
-          En 20 minutos por Google Meet te digo si puedo ayudarte, sin
-          compromiso.
-        </p>
-        <a href="https://calendly.com/tu-usuario/20min" target="_blank" rel="noopener" class="btn btn-primary" id="calendlyBtn">
-          Agendar por Google Meet
+    <!-- =========================================================
+         CTA AGENDAR LLAMADA
+    ========================================================== -->
+    <section class="cta-band" id="agendar">
+      <div class="container cta-band__inner">
+        <div>
+          <h2 class="cta-band__title">¿Listo para hacer crecer tu marca?</h2>
+          <p class="cta-band__text">
+            Agenda una llamada de 30 minutos por Google Meet. Hablamos de tu proyecto
+            y de cómo una estrategia digital puede ayudarte a lograr tus objetivos.
+          </p>
+        </div>
+        <!--
+          IMPORTANTE: reemplaza el href de abajo por tu enlace real de
+          Google Calendar (Calendar Appointment Schedule) o Google Meet.
+          Ejemplo: https://calendar.google.com/calendar/appointments/schedules/TU_ID
+        -->
+        <a href="https://calendar.google.com/calendar/u/0/appointments"
+           target="_blank" rel="noopener"
+           class="btn btn--dark">
+          Agendar llamada por Google Meet
         </a>
-        <p class="contact-note">También puedes escribirme directamente con el formulario.</p>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         FORMULARIO DE CONTACTO
+    ========================================================== -->
+    <section class="section" id="contacto">
+      <div class="container contact">
+
+        <div class="contact__intro">
+          <h2 class="section__title">Cuéntame sobre tu proyecto</h2>
+          <p class="section__desc">
+            Completa el formulario con los datos de tu marca o negocio. Al enviarlo,
+            se descargará un resumen en un archivo de texto y se abrirá WhatsApp
+            con tu mensaje listo para enviar.
+          </p>
+
+          <ul class="contact__list">
+            <li>
+              <span class="contact__list-label">Correo</span>
+              <a href="mailto:hola@danielrojas.dev">hola@danielrojas.dev</a>
+            </li>
+            <li>
+              <span class="contact__list-label">WhatsApp</span>
+              <a href="#" id="whatsappDirectLink">+57 300 000 0000</a>
+            </li>
+            <li>
+              <span class="contact__list-label">Ubicación</span>
+              <span>Colombia · Trabajo 100% remoto</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="contact-form__row">
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+            <span class="contact-form__error" data-error-for="nombre"></span>
+          </div>
+
+          <div class="contact-form__row">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+            <span class="contact-form__error" data-error-for="email"></span>
+          </div>
+
+          <div class="contact-form__row">
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: 3001234567" required>
+            <span class="contact-form__error" data-error-for="telefono"></span>
+          </div>
+
+          <div class="contact-form__row">
+            <label for="mensaje">Cuéntame sobre tu proyecto</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="¿Qué necesitas para tu marca?" required></textarea>
+            <span class="contact-form__error" data-error-for="mensaje"></span>
+          </div>
+
+          <button type="submit" class="btn btn--primary contact-form__submit">
+            Enviar mensaje
+          </button>
+
+          <p class="contact-form__status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       FOOTER
+  ========================================================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="navbar__logo-mark">DR</span>
+        <p>
+          Sebastian Rodriguez — Experto en Marketing Digital.<br>
+          Estrategias digitales claras, medibles y hechas para crecer.
+        </p>
       </div>
 
-      <form class="contact-form" id="contactForm" novalidate>
-        <div class="field">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" required autocomplete="name">
-          <span class="error" id="err-name"></span>
-        </div>
+      <nav class="footer__nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#educacion">Educación</a>
+        <a href="#experiencia">Experiencia</a>
+        <a href="#marcas">Marcas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
 
-        <div class="field">
-          <label for="email">Correo electrónico</label>
-          <input type="email" id="email" name="email" required autocomplete="email">
-          <span class="error" id="err-email"></span>
-        </div>
-
-        <div class="field">
-          <label for="company">Empresa o marca (opcional)</label>
-          <input type="text" id="company" name="company" autocomplete="organization">
-        </div>
-
-        <div class="field">
-          <label for="message">Cuéntame sobre tu proyecto</label>
-          <textarea id="message" name="message" rows="4" required></textarea>
-          <span class="error" id="err-message"></span>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
-          Enviar mensaje
-        </button>
-
-        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-      </form>
+      <div class="footer__social">
+        <a href="#" aria-label="LinkedIn">in</a>
+        <a href="#" aria-label="Instagram">ig</a>
+        <a href="#" aria-label="X / Twitter">x</a>
+      </div>
     </div>
-  </section>
 
-</main>
-
-<footer class="site-footer">
-  <div class="wrap footer-inner">
-    <span>© <span id="year"></span> Mateo Londoño. Todos los derechos reservados.</span>
-    <div class="footer-links">
-      <a href="mailto:hola@mateolondono.com">hola@mateolondono.com</a>
-      <a href="#top">Volver arriba</a>
+    <div class="container footer__bottom">
+      <p>© <span id="year"></span> Sebastian Rodriguez. Todos los derechos reservados.</p>
     </div>
-  </div>
-</footer>
+  </footer>
 
-<script src="js.js"></script>
+  <!-- Lógica de interfaz (navbar, scroll, menú, año, marcas) -->
+  <script src="js/main.js"></script>
+  <!-- Lógica exclusiva del formulario (validación, .txt y WhatsApp) -->
+  <script src="js/form.js"></script>
 </body>
 </html>
