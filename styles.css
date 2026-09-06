@@ -306,7 +306,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   color: var(--white);
   box-shadow: 0 12px 30px -12px rgba(0,0,0,0.6);
 }
-.hero__chip--top{ top: 8%; left: -8%; }
+.hero__chip--top{ top: 45%; left: -12%; }
 .hero__chip--bottom{ bottom: 6%; right: -10%; }
 .hero__chip-dot{
   width: 8px; height: 8px;
